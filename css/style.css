@@ -31,6 +31,9 @@
     opacity: 1;
 }
 
+   .link-hover{
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   }
 .link-hover:active, .link-hover:active span, .link-hover:focus, .link-hover:focus span, .link-hover:hover, .link-hover:hover span {
     color: #404BBF;
 }
@@ -124,7 +127,9 @@ p,h1,h2,h3{
     gap: 40px;
 
 }
+
 .header-link {
+    /* display: block; */
     position: relative;
     padding-top: 24px;
     font-weight: 500;
@@ -200,6 +205,7 @@ p,h1,h2,h3{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
+    cursor: pointer;
 
 
 }
@@ -207,6 +213,8 @@ p,h1,h2,h3{
 .peage-button:hover{
     background: #404BBF;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+cursor: pointer;
 }
 
 .modal-div.is-hidden .modal-index{
@@ -431,6 +439,8 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
 .icon-a:hover, .icon-a:focus{
     background: #404BBF;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 
@@ -493,6 +503,8 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: 1px solid #404BBF;
     color:  #404BBF;
     outline: none;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 
@@ -550,11 +562,14 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 50%;
     width: 100%;
     height: 100%;
+
 }
 
 .footer-a:hover, .footer-a:focus {
     background: #31D0AA;
     outline: none;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 
@@ -597,7 +612,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
 .footer-form-button{
     border: none;
-    background: #4D5AE5;
+    background-color: #4D5AE5;
 border-radius: 4px;
 font-weight: 500;
 font-size: 16px;
@@ -617,10 +632,12 @@ margin-left: 24px;
 height: 40px;
 }
 .footer-form-button:hover {
-    background: #404BBF;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
+    background-color: #404BBF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 cursor: pointer;
+transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .footer-form-svg{
     width:24px;
@@ -634,14 +651,25 @@ cursor: pointer;
     letter-spacing: 0.04em;
     color: #FFFFFF;
     background: #404BBF;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    /* box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12); */
     border-radius: 4px;
     width: 69px;
     height: 48px;
     padding: 12px 24px;
     border:none;
+    cursor: pointer;
 
 }
+
+.button-section-peage:hover, .button-srction-peage:focus, .button-srction-peage:active {
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background: #404BBF;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    border: none;
+
+}
+
 .two-potrfolio{
     width: 116px;
 }
@@ -664,13 +692,19 @@ cursor: pointer;
     border-radius: 4px;
     background: #F4F4FD;
     height: 48px;
+    cursor: pointer;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 
 }
 .button-section:hover, .button-section:focus{
+    
     background: #404BBF;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
     color: #FFFFFF;
     outline: none;
-    
+    cursor: pointer;
 }
 
 .div-card-div{
@@ -679,6 +713,7 @@ cursor: pointer;
 }
 
 .div-card{
+    padding: 40px 32px;
     position: absolute;
     background: #4D5AE5;
     opacity: 0;
@@ -686,30 +721,25 @@ cursor: pointer;
     height: 100%;
     top: 0;
     left: 0;
-    transform:translateY(50%);
-    transition: tranform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform:translateY(100%);
+    transition: tranform 2500ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
-.item-portfolio-two:hover .div-card{
+.link-card:hover .div-card,.link-card:focus .div-card{
     transform: translateY(0);
     opacity: 1;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
-.item-portfolio-two:hover .p-card{
+.link-card:hover .p-card,.link-card:focus .p-card{
     opacity: 1;
-    
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .p-card{
-    display: flex;
-    position: absolute;
-    width: 296px;
-    height: 96px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    height: 100%;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -718,7 +748,6 @@ cursor: pointer;
     letter-spacing: 0.02em;
     color: #F4F4FD;
     opacity: 0;
-    transition:  opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -787,9 +816,7 @@ cursor: pointer;
 
 }
 
-:hover, :focus{
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 .item-portfolio-two:hover{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     
@@ -930,30 +957,62 @@ margin-bottom: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+.checkbox-span{
+    content: "";
+    display: inline;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1.25px solid #2E2F42;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.checkbox:checked + .checkbox-span{
+    background-image: url(../images/Property\ 1=click\ \(1\).svg);
+    background-size: contain;
+    border: none;
+position: relative;
+}
+
+.checkbox-span-two{
+    width: 16px;
+    height: 16px;
+}
 
 .div-checkbox{
     display: flex;
     align-items: center;
     justify-content: center;
-    /* position: relative; */
+    position: relative;
     height: 16px;
-    margin-top: 16px;
+    
     margin-bottom:24px;
+    margin-top: 16px;
 
 }
 
 .checkbox{
+    /* left: 0px;
     width: 16px;
     height: 16px;
     border: 1.25px solid #2E2F42;
-    border-radius: 2px;
-    margin-top: 16px;
+    border-radius: 2px; */
+    /* margin-top: 16px; */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
 
 
 }
 
 .modal-p{
-
+    /* margin-top: 16px; */
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
